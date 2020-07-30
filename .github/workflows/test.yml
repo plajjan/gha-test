@@ -10,3 +10,5 @@ jobs:
             - uses: actions/checkout@v1
             - name: Build the tagged Docker image
               run: docker build . --tag foobar
+            - name: Run a privileged container
+              run: docker run --privileged foobar echo fjong
