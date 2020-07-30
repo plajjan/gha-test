@@ -12,3 +12,7 @@ jobs:
               run: docker build . --tag foobar
             - name: Run a privileged container
               run: docker run --privileged foobar echo fjong
+            - name: whoami
+              run: whoami
+            - name: kvm
+              run: ls -la /dev/kvm
